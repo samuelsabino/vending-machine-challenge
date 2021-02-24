@@ -180,6 +180,8 @@ Modelo do objeto que será enviado no corpo da requisição:
 
 - **`POST /`**: Para poder calcular a menor quantidade de moedas que será utilizada no troco, precisa ser enviado, no corpo da requisição um objeto contendo os campos `availableCoins` e `change`, onde o item `availableCoins` seria uma lista de objetos que contém dois valores, `value` e `quantity` e o item `change`, o valor do troco a ser utilizado no cálculo.
 
+- ``OBS``.: o item `availableCoins` é opcional, caso já exista moedas adicionadas na base, você pode optar por não querer adicionar mais moedas e utilizar somente as que já estão salvas.
+
 URL:
 
  ```
@@ -376,6 +378,7 @@ yarn coverage:report
 ├── .eslintignore
 ├── .eslintrc.js
 ├── .gitignore
+├── insomnia_requests_vending_machine_challenge.json
 ├── jest.config.ts
 ├── nodemon.json
 ├── ormconfig.json
@@ -383,3 +386,10 @@ yarn coverage:report
 ├── tsconfig.json
 └── readme.md
 ```
+
+---
+
+### Recursos e ferramentas </h3>
+
+- Na raiz do projeto há um arquivo `insomnia_requests_vending_machine_challenge.json`, 
+para utilizá-lo é necessário importá-lo dentro do programa `Insomnia`, conseguindo visualizar e testar as requisições que já estão montadas.
