@@ -23,10 +23,10 @@
       "./node_modules/@types",
       "./src/@types"
     ],
-    "paths": {
-      "@modules/*": ["modules/*"],
-      "@shared/*": ["shared/*"]
-    },         
+    // "paths": {
+    //   "@modules/*": ["modules/*"],
+    //   "@shared/*": ["shared/*"]
+    // },         
     "esModuleInterop": true,
     /* Experimental Options */
     "experimentalDecorators": true,
@@ -34,5 +34,5 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
-  "exclude": ["__tests__"]
+  "exclude": ["__tests__", "node_modules", "dist"]
 }
