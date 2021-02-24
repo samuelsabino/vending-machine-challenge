@@ -1,13 +1,16 @@
 import { ICoinRepository } from '../interfaces/coin.interface'
-import { formatMonetaryDescription } from '../services/util.service'
+import { FormatService } from '../services/format.service'
 
 class CheckCoinsUseCase {
-  constructor (private coinRepository: ICoinRepository) { /** */ }
+  constructor (
+    private coinRepository: ICoinRepository,
+    private formatService = new FormatService()
+  ) { /** */ }
 
   async execute (): Promise<string[]> {
-    const result = await this.coinRepository.checkQuantityCoin()
+    const coins = await this.coinRepository.checkQuantityCoin()
 
-    const formattedCoins = result.map((coin) => (formatMonetaryDescription(coin.value, coin.quantity)))
+    const formattedCoins = coins.map((coin) => (this.formatService.formatMonetaryDescription(coin.value, coin.quantity)))
 
     return formattedCoins
   }
