@@ -14,15 +14,10 @@ export class CreateCoin1613522606763 implements MigrationInterface {
             generationStrategy: 'increment'
           },
           {
-            name: 'name',
-            type: 'varchar',
-            length: '20',
-            isUnique: true
-          },
-          {
             name: 'value',
             type: 'decimal',
             precision: 3,
+            isUnique: true,
             scale: 2
           },
           {
