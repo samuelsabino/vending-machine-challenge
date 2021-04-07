@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 
-import { ICoinToAddDTO } from '../../../dtos/coin.dto'
+import { ICoinToAddDTO } from '../../../dtos/coin-to-add.dto'
 
 import { AddCoinsUseCase } from '../../../use-cases/add-coins.use-case'
 import { CalculateChangeUseCase } from '../../../use-cases/calculate-change.use-case'

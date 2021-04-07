@@ -1,6 +1,6 @@
 import { Joi } from 'celebrate'
 
-import { ICoinToAddDTO } from '../../../dtos/coin.dto'
+import { ICoinToAddDTO } from '../../../dtos/coin-to-add.dto'
 
 const coinsToAddSchema = Joi.array().items(
   Joi.object<ICoinToAddDTO>().keys({

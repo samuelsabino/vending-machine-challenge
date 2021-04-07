@@ -1,4 +1,4 @@
-import { ICoinToAddDTO } from '../../src/modules/coins/dtos/coin.dto'
+import { ICoinToAddDTO } from '../../src/modules/coins/dtos/coin-to-add.dto'
 import { FakeCoinRepository } from '../../src/modules/coins/infra/fake/repositories/fake-coin.repository'
 import { ICoinRepository } from '../../src/modules/coins/interfaces/coin.interface'
 import { CalculateChangeUseCase } from '../../src/modules/coins/use-cases/calculate-change.use-case'

@@ -1,4 +1,4 @@
-import { ICoinToAddDTO } from '../../../modules/coins/dtos/coin.dto'
+import { ICoinToAddDTO } from '../dtos/coin-to-add.dto'
 import { AppError } from '../../../shared/errors/app.error'
 import { ICoinRepository } from '../interfaces/coin.interface'
 import { FormatService } from '../services/format.service'

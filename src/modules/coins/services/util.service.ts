@@ -1,4 +1,4 @@
-import { ICoinToAddDTO } from '../../../modules/coins/dtos/coin.dto'
+import { ICoinToAddDTO } from '../dtos/coin-to-add.dto'
 
 import { Coin } from '../infra/typeorm/entities/coin.entity'
 import { ICoinRepository } from '../interfaces/coin.interface'

@@ -1,4 +1,4 @@
-import { ICoinToAddDTO } from '../dtos/coin.dto'
+import { ICoinToAddDTO } from '../dtos/coin-to-add.dto'
 import { ICoinRepository } from '../interfaces/coin.interface'
 import { UtilService } from '../services/util.service'
 
