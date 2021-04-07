@@ -1,7 +1,8 @@
+import { ICoinDTO } from 'modules/coins/dtos/coin.dto'
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn, VersionColumn } from 'typeorm'
 
 @Entity('coins', { schema: 'vending_machine' })
-class Coin {
+class Coin implements ICoinDTO {
   @PrimaryGeneratedColumn('increment')
   id?: number
 
